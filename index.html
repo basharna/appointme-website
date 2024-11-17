@@ -3,129 +3,157 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy - AppointMe</title>
+    <title>AppointMe - Your Appointment Booking App</title>
+    <link rel="stylesheet" href="assets/styles.css" />
     <style>
+      /* Basic Reset */
+      html, body {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+      }
+
       body {
         font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 20px;
-        max-width: 800px;
-        margin: auto;
-      }
-      h1,
-      h2 {
+        background-color: #f4f4f9;
         color: #333;
       }
-      h1 {
+
+      header {
+        padding: 20px;
+        text-align: start;
+      }
+
+      h1, h2, p {
+        margin: 0;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        padding: 20px;
+        flex: 1; /* Ensures the container takes up remaining space */
+        
+      }
+
+      .left-section {
+        flex: 1;
+        min-width: 300px;
+        padding: 20px;
+      }
+
+      .right-section {
+        flex: 1;
+        min-width: 300px;
         text-align: center;
       }
-      p {
-        margin-bottom: 15px;
+
+      .app-logo {
+        width: 60px;
+        height: auto;
       }
-      ul {
-        padding-left: 20px;
+
+      .app-description {
+        margin: 20px 0;
+      }
+
+      .download-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .download-buttons img {
+        cursor: pointer;
+      }
+
+      .google-play {
+        width: 180px;
+        height: auto;
+      }
+
+      .app-store {
+        width: 150px;
+        height: auto;
+      }
+
+      .app-screenshot {
+        max-width: 350px;
+        height: auto;
+      }
+
+      .header-content {
+        display: flex;
+        align-items: center;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: #fff;
+        margin-top: auto; /* Push the footer to the bottom */
+      }
+
+      footer a {
+        color: #fff;
+        text-decoration: none;
       }
     </style>
   </head>
   <body>
-    <h1>Privacy Policy</h1>
-
-    <p>
-      Welcome to the privacy policy for <strong>AppointMe</strong>. We value
-      your privacy and are committed to protecting your personal information.
-      This document outlines how we collect, use, and safeguard your data.
-    </p>
-
-    <h2>1. Information We Collect</h2>
-    <ul>
-      <li>
-        User information, including name, phone number, and profile picture
-        (optional).
-      </li>
-      <li>Appointment history for booking management.</li>
-      <li>
-        Shop owners can upload shop-related pictures and provide detailed shop
-        information.
-      </li>
-    </ul>
-
-    <h2>2. How We Use Your Information</h2>
-    <ul>
-      <li>To facilitate bookings and manage user accounts.</li>
-      <li>
-        To personalize the user experience (e.g., displaying profile photos).
-      </li>
-      <li>To store appointment history for tracking purposes.</li>
-    </ul>
-
-    <h2>3. Data Sharing and Disclosure</h2>
-    <ul>
-      <li>
-        We do not sell or share personal information with third parties for
-        marketing purposes.
-      </li>
-      <li>
-        Data may be shared with third-party services for app functionality
-        (e.g., cloud storage, analytics).
-      </li>
-      <li>
-        Information may be disclosed if required by law or to protect our legal
-        rights.
-      </li>
-    </ul>
-
-    <h2>4. User-Generated Content</h2>
-    <ul>
-      <li>
-        Pictures and reviews uploaded by users are considered public and can be
-        viewed by other users.
-      </li>
-      <li>Inappropriate content may be reviewed and removed by AppointMe.</li>
-    </ul>
-
-    <h2>5. Data Security</h2>
-    <ul>
-      <li>We implement reasonable security measures to protect user data.</li>
-      <li>
-        However, no system is completely secure, and we cannot guarantee the
-        absolute security of your data.
-      </li>
-    </ul>
-
-    <h2>6. User Rights</h2>
-    <ul>
-      <li>
-        Users can request to delete their account and associated data at any
-        time.
-      </li>
-      <li>
-        Users can update or modify their personal information through the app.
-      </li>
-    </ul>
-
-    <h2>7. Children’s Privacy</h2>
-    <p>
-      AppointMe is not intended for children under the age of 13. We do not
-      knowingly collect information from children under 13.
-    </p>
-
-    <h2>8. Changes to the Privacy Policy</h2>
-    <ul>
-      <li>
-        This Privacy Policy may be updated periodically. Users will be notified
-        of any significant changes.
-      </li>
-      <li>
-        Continued use of the app indicates acceptance of the revised policy.
-      </li>
-    </ul>
-
-    <h2>9. Contact Information</h2>
-    <p>
-      For privacy-related inquiries, please contact us via the support section
-      in the app.
-    </p>
-
-    <p><em>Last updated: 01/11/2024</em></p>
+    <header>
+      <div class="header-content">
+        <img
+          src="assets/images/logo.png"
+          alt="AppointMe Logo"
+          class="app-logo"
+        />
+        <h1>AppointMe</h1>
+      </div>
+    </header>
+    <div class="container">
+      <!-- Left Section -->
+      <div class="left-section">
+        <p class="app-description">
+          AppointMe is your one-stop solution for booking appointments at your
+          favorite shops. Stay organized and save time.
+        </p>
+        <div class="download-buttons">
+          <a href="">
+            <img
+              src="assets/images/google-play.png"
+              alt="Get it on Google Play"
+              class="google-play"
+            />
+          </a>
+          <a href="">
+            <img
+              src="assets/images/app-store.png"
+              alt="Download on the App Store"
+              class="app-store"
+            />
+          </a>
+        </div>
+      </div>
+      <!-- Right Section -->
+      <div class="right-section">
+        <img
+          src="assets/images/appointme.png"
+          alt="App Screenshot"
+          class="app-screenshot"
+        />
+      </div>
+    </div>
+    <footer>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </footer>
   </body>
 </html>
