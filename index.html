@@ -84,6 +84,7 @@
       .app-store {
         width: 150px;
         height: auto;
+        margin-bottom: 14px;
       }
 
       .app-screenshot {
@@ -94,6 +95,18 @@
       .header-content {
         display: flex;
         align-items: center;
+      }
+      .google-play-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align to the left for consistency */
+      }
+
+      .coming-soon {
+        margin-top: 0px;
+        margin-left: 12px;
+        color: #555;
+        font-size: 14px;
       }
 
       footer {
@@ -129,13 +142,16 @@
           favorite shops. Stay organized and save time.
         </p>
         <div class="download-buttons">
-          <a href="">
-            <img
-              src="assets/images/google-play.png"
-              alt="Get it on Google Play"
-              class="google-play"
-            />
-          </a>
+          <div class="google-play-section">
+            <a href="">
+              <img
+                src="assets/images/google-play.png"
+                alt="Get it on Google Play"
+                class="google-play"
+              />
+            </a>
+            <span class="coming-soon">Coming Soon on Android</span>
+          </div>
           <a
             href="https://apps.apple.com/us/app/appointme-booking-app/id6737212910"
           >
