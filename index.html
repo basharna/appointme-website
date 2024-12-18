@@ -67,8 +67,8 @@
       .download-buttons {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
+        justify-content: start;
+        align-items: end;
         margin-top: 20px;
       }
 
@@ -77,14 +77,13 @@
       }
 
       .google-play {
-        width: 180px;
-        height: auto;
+        height: 50px;
+        margin-right: 4px;
       }
 
       .app-store {
-        width: 150px;
-        height: auto;
-        margin-bottom: 14px;
+        height: 50px;
+        margin-left: 4px;
       }
 
       .app-screenshot {
@@ -143,24 +142,28 @@
         </p>
         <div class="download-buttons">
           <div class="google-play-section">
-            <a href="">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.konenas.appointme"
+            >
               <img
                 src="assets/images/google-play.png"
                 alt="Get it on Google Play"
                 class="google-play"
               />
             </a>
-            <span class="coming-soon">Coming Soon on Android</span>
+            <!-- <span class="coming-soon">Coming Soon on Android</span> -->
           </div>
-          <a
-            href="https://apps.apple.com/us/app/appointme-booking-app/id6737212910"
-          >
-            <img
-              src="assets/images/app-store.png"
-              alt="Download on the App Store"
-              class="app-store"
-            />
-          </a>
+          <div class="app-store-section">
+            <a
+              href="https://apps.apple.com/us/app/appointme-booking-app/id6737212910"
+            >
+              <img
+                src="assets/images/app-store.png"
+                alt="Download on the App Store"
+                class="app-store"
+              />
+            </a>
+          </div>
         </div>
       </div>
       <!-- Right Section -->
