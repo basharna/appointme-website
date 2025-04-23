@@ -3,124 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AppointMe - Your one-stop solution for booking appointments at your favorite shops. Download now for iOS and Android!"
+    />
+    <meta name="theme-color" content="#f4f4f9" />
+    <meta
+      property="og:title"
+      content="AppointMe - Your Appointment Booking App"
+    />
+    <meta
+      property="og:description"
+      content="Book appointments at your favorite shops easily with AppointMe. Available on iOS and Android."
+    />
+    <meta property="og:type" content="website" />
     <title>AppointMe - Your Appointment Booking App</title>
-    <link rel="stylesheet" href="assets/styles.css" />
-    <style>
-      /* Basic Reset */
-      html,
-      body {
-        height: 100%;
-        margin: 0px;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-      }
-
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
-        color: #333;
-      }
-
-      header {
-        padding: 20px;
-        text-align: start;
-      }
-
-      h1,
-      h2,
-      p {
-        margin: 0;
-      }
-
-      .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-        width: 100%;
-        padding: 20px;
-        flex: 1; /* Ensures the container takes up remaining space */
-      }
-
-      .left-section {
-        flex: 1;
-        min-width: 300px;
-        padding: 20px;
-      }
-
-      .right-section {
-        flex: 1;
-        min-width: 300px;
-        text-align: center;
-      }
-
-      .app-logo {
-        width: 60px;
-        height: auto;
-      }
-
-      .app-description {
-        margin: 20px 0;
-      }
-
-      .download-buttons {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: end;
-        margin-top: 20px;
-      }
-
-      .download-buttons img {
-        cursor: pointer;
-      }
-
-      .google-play {
-        height: 50px;
-        margin-right: 4px;
-      }
-
-      .app-store {
-        height: 50px;
-        margin-left: 4px;
-      }
-
-      .app-screenshot {
-        max-width: 350px;
-        height: auto;
-      }
-
-      .header-content {
-        display: flex;
-        align-items: center;
-      }
-      .google-play-section {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; /* Align to the left for consistency */
-      }
-
-      .coming-soon {
-        margin-top: 0px;
-        margin-left: 12px;
-        color: #555;
-        font-size: 14px;
-      }
-
-      footer {
-        text-align: center;
-        padding: 20px;
-        background-color: #333;
-        color: #fff;
-        margin-top: auto; /* Push the footer to the bottom */
-      }
-
-      footer a {
-        color: #fff;
-        text-decoration: none;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
   </head>
   <body>
     <header>
@@ -129,55 +28,62 @@
           src="assets/images/logo.png"
           alt="AppointMe Logo"
           class="app-logo"
-          style="margin-right: 10px;"
         />
-        <h1>AppointMe</h1>
+        <h1 class="app-title">AppointMe</h1>
       </div>
     </header>
-    <div class="container">
-      <!-- Left Section -->
-      <div class="left-section">
-        <p class="app-description">
-          AppointMe is your one-stop solution for booking appointments at your
-          favorite shops. Stay organized and save time.
-        </p>
-        <div class="download-buttons">
-          <div class="google-play-section">
-            <a
-              href="https://play.google.com/store/apps/details?id=com.konenas.appointme"
-            >
-              <img
-                src="assets/images/google-play.png"
-                alt="Get it on Google Play"
-                class="google-play"
-              />
-            </a>
-            <!-- <span class="coming-soon">Coming Soon on Android</span> -->
-          </div>
-          <div class="app-store-section">
-            <a
-              href="https://apps.apple.com/us/app/appointme-booking-app/id6737212910"
-            >
-              <img
-                src="assets/images/app-store.png"
-                alt="Download on the App Store"
-                class="app-store"
-              />
-            </a>
+    <main class="main">
+      <div class="app-and-image">
+        <div class="left-section">
+          <h1 class="app-description">Appointment booking, made easy.</h1>
+          <div class="download-buttons">
+            <div class="google-play-section">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.konenas.appointme"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Get it on Google Play"
+              >
+                <img
+                  src="assets/images/google-play.png"
+                  alt="Get it on Google Play"
+                  class="google-play"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+            <div class="app-store-section">
+              <a
+                href="https://apps.apple.com/us/app/appointme-booking-app/id6737212910"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Download on the App Store"
+              >
+                <img
+                  src="assets/images/app-store.png"
+                  alt="Download on the App Store"
+                  class="app-store"
+                  loading="lazy"
+                />
+              </a>
+            </div>
           </div>
         </div>
+        <div class="right-section">
+          <img
+            src="assets/images/appointme.png"
+            alt="AppointMe App Screenshot"
+            class="app-screenshot"
+            loading="lazy"
+          />
+        </div>
       </div>
-      <!-- Right Section -->
-      <div class="right-section">
-        <img
-          src="assets/images/appointme.png"
-          alt="App Screenshot"
-          class="app-screenshot"
-        />
-      </div>
-    </div>
+    </main>
     <footer>
-      <a href="privacy-policy.html">Privacy Policy</a>
+      <nav>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </nav>
     </footer>
+    <script src="./scripts.js"></script>
   </body>
 </html>
